@@ -17,3 +17,19 @@
   - Storage period
   - Ingredients
   - Instructions
+- Install Chrome
+  - Add repo
+    ``sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'``
+    ``sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -``
+
+  - Update packge list
+    ``sudo apt update``
+  
+  - Install
+    ``sudo apt install google-chrome-stable``
+
+  - Check verison
+    ``google-chrome --version``
+
+- Install Chrome driver
+  - Based on chrome version above, find pip version here: https://pypi.org/project/chromedriver-binary/#history
